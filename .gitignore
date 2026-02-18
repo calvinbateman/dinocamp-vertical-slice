@@ -1,25 +1,74 @@
-# env / secrets
+# Environment and secrets
 .env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+*.pem
 
-# node
+# Dependencies
 node_modules/
-**/node_modules/
 
-# logs
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+*.tsbuildinfo
+
+# Vite
+.vite/
+*.local
+
+# IDE and editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and debug
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# build outputs
-dist/
-build/
-out/
-.next/
-.vite/
+# Testing and coverage
 coverage/
+.nyc_output/
+*.lcov
 
-# OS/editor junk
-.DS_Store
-.vscode/
-.idea/
+# Optional caches
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# Optional npm
+.npm
+.yarn-integrity
+.pnpm-store/
+
+# Optional lockfile (uncomment if you want to ignore)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Misc
+*.bak
+*.tmp
+.temp/
+tmp/
+temp/
